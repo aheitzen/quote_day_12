@@ -1,3 +1,91 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+html, body {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	position: fixed;
+}
+p {
+	font-family: 'Josefin Slab', serif;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40%;
+}
+
+.grid {
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-column-gap: 30px;
+  	grid-row-gap: 30px;
+}
+
+.box-one {
+	height: 410px;
+	width: 100%;
+	background-color: rgba(255, 51, 153, 1); 
+}
+
+.box-one:hover {
+	transform: rotate(5deg);
+}
+
+.box-two {
+	height: 410px;
+	width: 100%;
+	background-color: rgba(51, 51, 204, 0.7); 
+}
+
+.box-two:hover {
+	background-color: white;
+	outline: solid 10px rgba(51, 51, 204, 0.7);
+    outline-offset: -10px;
+    cursor: pointer;
+}
+
+.box-three {
+	height: 410px;
+	width: 100%;
+	background-color: rgba(255, 255, 0, 0.8)
+}
+
+.box-three:hover {
+	background-color: #6AA8D2;
+	cursor: pointer;
+}
+
+
+.box-four {
+	height: 410px;
+	width: 100%;
+	background-color: red;
+}
+
+.box-four:hover {
+	background: none;
+	cursor: pointer;
+	transition: ease-out;
+	transition-duration: 1s;
+}
+
+.box-five {
+	height: 410px;
+	width: 100%;
 	background-color: pink;
+}
+
+.box-five:hover {
+	background-image: url("../images/memphis.jpg");
+	cursor: pointer;
+}
+
+.box-six {
+	height: 410px;
+	width: 100%;
+	background-color: #1BA39F;
+}
+
+.box-six:hover {
+	transform: scale(1.3);
 }
